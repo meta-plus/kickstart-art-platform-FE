@@ -1,0 +1,12 @@
+.wrap-box{
+    margin-left: 240px;
+    width: 100%-240px;
+    padding: 0;
+}
+
+@media only screen and (max-width: 1248px) {
+    .wrap-box{
+        width: 100%;
+        margin-left: 0px;
+    }
+}

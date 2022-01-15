@@ -1,0 +1,29 @@
+.navbar{
+    display: none;
+}
+
+@media only screen and (max-width: 1248px) {
+    .navbar{
+        width: 100%;
+        height: 48px;
+        background-color: #4564FF;
+        position: fixed;
+        z-index: 6;
+        top: 0;
+        display: block;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.navbar-logo{
+    padding: 10px;
+}
+
+.navbar-menu{
+    float: right;
+    padding: 10px;
+    width: 24px;
+    height: 24px;
+}
+

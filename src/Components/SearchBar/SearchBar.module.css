@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.search-bar{
+    width: 315px;
+    height: 40px;
+    background: #F3F6FA;
+    border-radius: 8px;
+    background-image: url("../../assets/data/Images/Search.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 11px left 12px;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 8px;
+
+}
+
+.filter-button{
+    display: none;
+}
+
+@media only screen and (max-width: 1248px) {
+    .search-bar{
+        width: 100%;
+        height: 40px;
+        background: #F3F6FA;
+        border-radius: 8px;
+        background-image: url("../../assets/data/Images/Search.svg");
+        background-repeat: no-repeat;
+        background-position: bottom 11px left 12px;
+        font-family: 'Montserrat', sans-serif;
+        margin-right: 8px;
+        margin-top: 8px;
+    }
+    .filter-button{
+        display: block;
+        float: right;
+        width: 32px;
+        height: 32px;
+        background-image: url("../../assets/data/Images/filter.svg");
+        background-repeat: no-repeat;
+        margin-right: 8px;
+    }
+}
+
+.search-bar:focus{
+    background-image: none;
+}
+
+.search-bar:focus::placeholder{
+    color: transparent;
+}
+
+.search-bar::placeholder{
+    color: #B0B6BB;
+}

@@ -1,0 +1,35 @@
+.logoWarp{
+    /* padding-left: 8px; */
+    padding-top: 24px;
+    font-size: 32px;
+    padding-left: 4px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 1248px){
+    .logoWarp{
+        padding: 0px;
+    }
+}
+
+.fragmentWarp{
+    position: relative;
+    box-sizing: border-box;
+}
+
+.buttonsWarp{
+    position: absolute;
+    top: 86px;
+    /* transform: translateY(-50%);  */
+    width: 208px;
+    padding: 24px 4px 4px 0px;
+    box-sizing: border-box;
+}
+
+.sidebarLine{
+    width:192px;
+    background: white;
+    height: 2px;
+    margin-top: 20px;
+    margin-left: 4px;
+}
