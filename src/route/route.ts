@@ -1,4 +1,5 @@
 import { FIconTypes } from "@fantaskticedtechlimited/fui-iconlib"
+import Artist from "../Pages/Artist"
 import Home from "../Pages/Home"
 import Inbox from "../Pages/Inbox"
 import Login from "../Pages/Login"
@@ -51,15 +52,15 @@ const routes: AuthRouteConfig[] = [
 	// 	iconName: FIconTypes.DELETE,
 	// 	allowBeforeLogin: true,
 	// },
-	// {
-	// 	path: "/settings",
-	// 	component: Inbox,
-	// 	mainMenuButtonName: "Settings",
-	// 	breadcrumbName: "Settings",
-	// 	exact: true,
-	// 	iconName: FIconTypes.SETTING,
-	// 	allowBeforeLogin: true,
-	// },
+	{
+		path: "/artist",
+		component: Artist,
+		mainMenuButtonName: "Artist",
+		breadcrumbName: "Artist",
+		exact: true,
+		iconName: FIconTypes.BOOK,
+		allowBeforeLogin: true,
+	},
 	{
 		path: ["/home", "/"],
 		component: Home,
