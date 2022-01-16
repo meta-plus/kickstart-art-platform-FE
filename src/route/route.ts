@@ -3,7 +3,12 @@ import Artist from "../Pages/Artist"
 import Home from "../Pages/Home"
 import Inbox from "../Pages/Inbox"
 import Login from "../Pages/Login"
+import MyFundedProject from "../Pages/MyFundedProject"
+import MyNFT from "../Pages/MyNFT"
+import MyProject from "../Pages/MyProject"
 import Newsletter from "../Pages/Newsletter/Newsletter"
+import ProjectPage from "../Pages/Project"
+import SwapTokenPage from "../Pages/SwapToken"
 import { AuthRouteConfig } from "./type"
 
 const routes: AuthRouteConfig[] = [
@@ -61,6 +66,54 @@ const routes: AuthRouteConfig[] = [
 		iconName: FIconTypes.BOOK,
 		allowBeforeLogin: true,
 	},
+	{
+		path: "/project",
+		component: ProjectPage,
+		mainMenuButtonName: "Fund Projects",
+		breadcrumbName: "Fund Projects",
+		exact: true,
+		iconName: FIconTypes.BOOK,
+		allowBeforeLogin: true,
+	},
+	{
+		path: "/myproject",
+		component: MyProject,
+		mainMenuButtonName: "My Projects",
+		breadcrumbName: "My Projects",
+		exact: true,
+		iconName: FIconTypes.MENU,
+		allowBeforeLogin: true,
+	},
+	{
+		path: "/myfundedproject",
+		component: MyFundedProject,
+		mainMenuButtonName: "Funded Projects",
+		breadcrumbName: "Funded Projects",
+		exact: true,
+		iconName: FIconTypes.BOOK_MARK,
+		allowBeforeLogin: true,
+	},
+	{
+		path: "/mynft",
+		component: MyNFT,
+		mainMenuButtonName: "My NFTs",
+		breadcrumbName: "My NFTs",
+		exact: true,
+		iconName: FIconTypes.MENU,
+		allowBeforeLogin: true,
+	},
+	// MyFundedProjectPage
+	{
+		path: "/swapToken",
+		component: SwapTokenPage,
+		mainMenuButtonName: "Swap Token",
+		breadcrumbName: "Swap Token",
+		exact: true,
+		iconName: FIconTypes.MENU,
+		allowBeforeLogin: true,
+	},
+
+	// SwapTokenPage
 	{
 		path: ["/home", "/"],
 		component: Home,

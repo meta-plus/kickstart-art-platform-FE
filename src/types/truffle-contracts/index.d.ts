@@ -3,7 +3,6 @@
 
 import { ArtistMembersContract } from "./ArtistMembers";
 import { ArtProjectsContract } from "./ArtProjects";
-import { ElectionV2Contract } from "./ElectionV2";
 import { Erc165Contract } from "./Erc165";
 import { Erc20Contract } from "./Erc20";
 import { Erc721Contract } from "./Erc721";
@@ -15,6 +14,7 @@ import { Ierc721Contract } from "./Ierc721";
 import { Ierc721MetadataContract } from "./Ierc721Metadata";
 import { Ierc721ReceiverContract } from "./Ierc721Receiver";
 import { MainGameContract } from "./MainGame";
+import { MigrationsContract } from "./Migrations";
 import { OwnableContract } from "./Ownable";
 import { PlatformTokenContract } from "./PlatformToken";
 
@@ -23,7 +23,6 @@ declare global {
     interface Artifacts {
       require(name: "ArtistMembers"): ArtistMembersContract;
       require(name: "ArtProjects"): ArtProjectsContract;
-      require(name: "ElectionV2"): ElectionV2Contract;
       require(name: "ERC165"): Erc165Contract;
       require(name: "ERC20"): Erc20Contract;
       require(name: "ERC721"): Erc721Contract;
@@ -35,6 +34,7 @@ declare global {
       require(name: "IERC721Metadata"): Ierc721MetadataContract;
       require(name: "IERC721Receiver"): Ierc721ReceiverContract;
       require(name: "MainGame"): MainGameContract;
+      require(name: "Migrations"): MigrationsContract;
       require(name: "Ownable"): OwnableContract;
       require(name: "PlatformToken"): PlatformTokenContract;
     }
@@ -43,7 +43,6 @@ declare global {
 
 export { ArtistMembersContract, ArtistMembersInstance } from "./ArtistMembers";
 export { ArtProjectsContract, ArtProjectsInstance } from "./ArtProjects";
-export { ElectionV2Contract, ElectionV2Instance } from "./ElectionV2";
 export { Erc165Contract, Erc165Instance } from "./Erc165";
 export { Erc20Contract, Erc20Instance } from "./Erc20";
 export { Erc721Contract, Erc721Instance } from "./Erc721";
@@ -67,5 +66,6 @@ export {
   Ierc721ReceiverInstance
 } from "./Ierc721Receiver";
 export { MainGameContract, MainGameInstance } from "./MainGame";
+export { MigrationsContract, MigrationsInstance } from "./Migrations";
 export { OwnableContract, OwnableInstance } from "./Ownable";
 export { PlatformTokenContract, PlatformTokenInstance } from "./PlatformToken";
