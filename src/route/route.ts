@@ -63,7 +63,7 @@ const routes: AuthRouteConfig[] = [
 		mainMenuButtonName: "Artist",
 		breadcrumbName: "Artist",
 		exact: true,
-		iconName: FIconTypes.BOOK,
+		iconName: FIconTypes.BOOK_MARK,
 		allowBeforeLogin: true,
 	},
 	{
@@ -72,7 +72,7 @@ const routes: AuthRouteConfig[] = [
 		mainMenuButtonName: "Fund Projects",
 		breadcrumbName: "Fund Projects",
 		exact: true,
-		iconName: FIconTypes.BOOK,
+		iconName: FIconTypes.BOOK_MARK,
 		allowBeforeLogin: true,
 	},
 	{
@@ -81,7 +81,7 @@ const routes: AuthRouteConfig[] = [
 		mainMenuButtonName: "My Projects",
 		breadcrumbName: "My Projects",
 		exact: true,
-		iconName: FIconTypes.MENU,
+		iconName: FIconTypes.BOOK_MARK,
 		allowBeforeLogin: true,
 	},
 	{
@@ -99,7 +99,7 @@ const routes: AuthRouteConfig[] = [
 		mainMenuButtonName: "My NFTs",
 		breadcrumbName: "My NFTs",
 		exact: true,
-		iconName: FIconTypes.MENU,
+		iconName: FIconTypes.BOOK_MARK,
 		allowBeforeLogin: true,
 	},
 	// MyFundedProjectPage
@@ -109,7 +109,7 @@ const routes: AuthRouteConfig[] = [
 		mainMenuButtonName: "Swap Token",
 		breadcrumbName: "Swap Token",
 		exact: true,
-		iconName: FIconTypes.MENU,
+		iconName: FIconTypes.BOOK_MARK,
 		allowBeforeLogin: true,
 	},
 

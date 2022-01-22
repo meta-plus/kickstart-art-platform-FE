@@ -137,7 +137,8 @@ function MyProjectPage() {
 				"i want to rent a production team to file my MV on a beach"
 			)
 			let targetFundingAmount = prompt(
-				"Please enter your targetFundingAmount"
+				"Please enter your targetFundingAmount",
+				'500000'
 			)
 			await mainGameInstance?.kickStartProject(
 				name!,
@@ -152,23 +153,9 @@ function MyProjectPage() {
 		}
 	}
 
-	const addFundToProject = async (projectId: number) => {
-		let targetFundingAmount = prompt("Please enter your fund amount")
-		try {
-			await mainGameInstance?.addFundToProject(
-				projectId!,
-				targetFundingAmount!,
-				{
-					from: account!,
-				}
-			)
-		} catch (error) {
-			alert(JSON.stringify(error))
-		}
-	}
 
 	const endProject = async (projectId: number) => {
-		let finalProductURL = prompt("Please enter your project download URL")
+		let finalProductURL = prompt("Please enter your project download URL","https://drive.google.com/file/d/1aMgC544WpAr5uuvRi-WrgLG5NN_S_kzl/view?usp=sharing")
 		try {
 			await mainGameInstance?.endProject(
 				projectId!,
@@ -192,7 +179,7 @@ function MyProjectPage() {
 	}, [artistMemberInstance, artProjectInstance])
 	return (
 		<div className={styles.ContentContainer}>
-			<FStyledText font={FontTypes.H4}>Project list</FStyledText>
+			<FStyledText font={FontTypes.H4}>My Project</FStyledText>
 
 			<div className={styles.toolbarContainer}>
 

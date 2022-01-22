@@ -126,7 +126,7 @@ function SwapTokenPage() {
 	const mintToken = async () => {
 		try {
 			
-			let amount = prompt("Please enter your name")
+			let amount = prompt("Please enter your amount","5000000000000000000000000")
 			await platformTokenInstance?.mint(account!, amount!, {
 				from: account!,
 			})

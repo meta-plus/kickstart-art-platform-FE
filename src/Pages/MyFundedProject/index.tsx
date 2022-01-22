@@ -22,7 +22,7 @@ import { MyFundedArtProject } from "./ProjectRow/type"
 import MyFundedArtProjectRow from "./ProjectRow"
 import { FStyledText } from "@fantaskticedtechlimited/fantasktic-comp-library"
 import { FontTypes } from "@fantaskticedtechlimited/fantasktic-comp-library/lib/esm/types"
-import { FPrimaryButton } from "@fantaskticedtechlimited/fui-complib"
+import { FSecondaryButton } from "@fantaskticedtechlimited/fui-complib"
 import WithLoadingPageWrapper, {
 	LoadingPageWrapperContext,
 } from "../../layout/WithLoadingPageWrapper2"
@@ -178,23 +178,23 @@ function MyFundedProjectPage() {
 	}, [artistMemberInstance, artProjectInstance])
 	return (
 		<div className={styles.ContentContainer}>
-			<FStyledText font={FontTypes.H4}>Project list</FStyledText>
+			<FStyledText font={FontTypes.H4}>Funded Project</FStyledText>
 
 			<div className={styles.toolbarContainer}>
 
 
 				{/* New Folder button */}
-				<FPrimaryButton
+				<FSecondaryButton
 					labelStyle={{ color: "white" }}
 					onClick={async () => await initialFundRaise()}
 				>
 					Initiate Fund Raising
-				</FPrimaryButton>
+				</FSecondaryButton>
 
 				{/* refresh button */}
-				<FPrimaryButton onClick={async () => await GetMyFundedArtProjectList()}>
+				<FSecondaryButton onClick={async () => await GetMyFundedArtProjectList()}>
 					Refresh
-				</FPrimaryButton>
+				</FSecondaryButton>
 			</div>
 
 			<div className={styles.topicListDiv}>

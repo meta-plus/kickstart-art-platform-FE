@@ -22,7 +22,7 @@ import { ArtProject } from "./ProjectRow/type"
 import ArtProjectRow from "./ProjectRow"
 import { FStyledText } from "@fantaskticedtechlimited/fantasktic-comp-library"
 import { FontTypes } from "@fantaskticedtechlimited/fantasktic-comp-library/lib/esm/types"
-import { FPrimaryButton } from "@fantaskticedtechlimited/fui-complib"
+import { FSecondaryButton } from "@fantaskticedtechlimited/fui-complib"
 import WithLoadingPageWrapper, {
 	LoadingPageWrapperContext,
 } from "../../layout/WithLoadingPageWrapper2"
@@ -196,25 +196,25 @@ function ProjectPage() {
 			<FStyledText font={FontTypes.H4}>Project list</FStyledText>
 
 			<div className={styles.toolbarContainer}>
-				<FPrimaryButton
+				<FSecondaryButton
 					labelStyle={{ color: "white" }}
 					onClick={async () => await increaseAllowance()}
 				>
 					Allowance
-				</FPrimaryButton>
+				</FSecondaryButton>
 
 				{/* New Folder button */}
-				<FPrimaryButton
+				<FSecondaryButton
 					labelStyle={{ color: "white" }}
 					onClick={async () => await initialFundRaise()}
 				>
 					Initiate Fund Raising
-				</FPrimaryButton>
+				</FSecondaryButton>
 
 				{/* refresh button */}
-				<FPrimaryButton onClick={async () => await GetArtProjectList()}>
+				<FSecondaryButton onClick={async () => await GetArtProjectList()}>
 					Refresh
-				</FPrimaryButton>
+				</FSecondaryButton>
 			</div>
 
 			<div className={styles.topicListDiv}>

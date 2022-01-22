@@ -67,6 +67,16 @@ function ArtProjectRow(props: ArtProjectRowProps) {
 				>
 					{`Artist: ${artist?.name}`}
 				</FStyledText>
+
+				<FStyledText
+					font={FontTypes.B12}
+					color={ColorTypes.GREY}
+					whiteSpace="pre-wrap"
+					overflowWrap="break-word"
+					maxRows={1}
+				>
+					{props.artProject.description ?? ""}
+				</FStyledText>
 			</div>
 
 			<div

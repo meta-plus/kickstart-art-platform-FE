@@ -17,14 +17,11 @@ import {
 } from "@fantaskticedtechlimited/fui-complib"
 
 function MyNFTProjectRow(props: MyArtProjectRowProps) {
-	const history = useHistory()
+
 	const numberFormatter = (num: number) => {
 		if (num < 10) return "0" + num.toString()
 		else return num.toString()
 	}
-	// const artist = props.artistList.find(
-	// 	(e) => e.artistAddress === props.
-	// )
 	console.log("projectList", props.projectList)
 	console.log("artistList", props.artistList)
 	console.log("nft", props.nft)
@@ -36,6 +33,7 @@ function MyNFTProjectRow(props: MyArtProjectRowProps) {
 	)
 	console.log("project", project)
 	console.log("artist", artist)
+
 	return (
 		<div className={styles.topicRowDiv()}>
 			{/* Number shows on left hand side */}

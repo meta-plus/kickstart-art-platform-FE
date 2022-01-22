@@ -15,6 +15,7 @@ import {
 	FPrimaryButton,
 	FSecondaryButton,
 } from "@fantaskticedtechlimited/fui-complib"
+import { Fragment } from "react"
 
 function MyFundedArtProjectRow(props: MyFundedArtProjectRowProps) {
 	const history = useHistory()
@@ -136,12 +137,22 @@ function MyFundedArtProjectRow(props: MyFundedArtProjectRowProps) {
 				{props.artProject.isOpen ? (
 					<FStyledText font={FontTypes.B16}>Open</FStyledText>
 				) : (
-					<FSecondaryButton
-						labelStyle={{ color: "white" }}
-						onClick={props.onClaimNFT}
-					>
-						Claim Reward NFT
-					</FSecondaryButton>
+					<Fragment>
+						<FSecondaryButton
+							labelStyle={{ color: "white" }}
+							onClick={props.onClaimNFT}
+						>
+							Claim Reward NFT
+						</FSecondaryButton>
+						<FSecondaryButton
+							labelStyle={{ color: "white" }}
+							onClick={() =>{
+								const newWindow = window.open(props.artProject.dataURL, '_blank', 'noopener,noreferrer')
+							}}
+						>
+							Download Product
+						</FSecondaryButton>
+					</Fragment>
 				)}
 			</div>
 		</div>

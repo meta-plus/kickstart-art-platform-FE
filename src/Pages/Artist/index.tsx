@@ -22,7 +22,7 @@ import { ArtistMember } from "./ArtistRow/type"
 import ArtistRow from "./ArtistRow"
 import { FStyledText } from "@fantaskticedtechlimited/fantasktic-comp-library"
 import { FontTypes } from "@fantaskticedtechlimited/fantasktic-comp-library/lib/esm/types"
-import { FPrimaryButton } from "@fantaskticedtechlimited/fui-complib"
+import { FSecondaryButton } from "@fantaskticedtechlimited/fui-complib"
 
 var contract = require("@truffle/contract")
 
@@ -94,8 +94,8 @@ function ArtistPage() {
     
 	const registerAsArtist = async () => {
 		try {
-            let name = prompt("Please enter your name", "Harry Potter");
-            let iconURL = prompt("Please enter your iconURL", "https://www.collinsdictionary.com/images/full/apple_158989157.jpg");
+            let name = prompt("Please enter your name", "Jacky");
+            let iconURL = prompt("Please enter your iconURL", "https://scontent.fhkg4-2.fna.fbcdn.net/v/t31.18172-8/10845652_10202013595181141_2908695720798677525_o.jpg?_nc_cat=111&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=WB1YudBH4qsAX-gvAu0&tn=Xz5sFQR7syS-pSPC&_nc_ht=scontent.fhkg4-2.fna&oh=00_AT9QQZgaeuljaxUwlyp28Avg_Aiag-xa8yLdeiUv0BIN4A&oe=620AEC91");
 			await mainGameInstance?.registerAsArtist(
 				name!,
 				iconURL!,
@@ -122,21 +122,21 @@ function ArtistPage() {
 
 			<div className={styles.toolbarContainer}>
 				{/* New Folder button */}
-				<FPrimaryButton
+				<FSecondaryButton
                     labelStyle={{color:"white"}}
 					onClick={async () =>
 						await registerAsArtist()
 					}
 				>
 					Join Artist
-				</FPrimaryButton>
+				</FSecondaryButton>
 
 				{/* refresh button */}
-				<FPrimaryButton
+				<FSecondaryButton
 					onClick={async () => await GetArtistMemberList()}
 				>
 					Refresh
-				</FPrimaryButton>
+				</FSecondaryButton>
 			</div>
 
 			<div className={styles.topicListDiv}>

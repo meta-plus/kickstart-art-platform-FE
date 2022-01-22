@@ -25,7 +25,7 @@ export const InboxPlusSideNavBar = (props: InboxPlusSideNavBarProps) => {
 					<Link to="/inbox" className={style.homeLink}><FText
 						font={FFontTypes.Large_Title}
 						color={FColorTypes.PURE_WHITE}
-						children="INBOX+"
+						children="META+"
 					/></Link>
 				}
 				containerStyle={{

@@ -22,7 +22,7 @@ import { MyArtProject, MyShareNFT } from "./ProjectRow/type"
 import MyNFTProjectRow from "./ProjectRow"
 import { FStyledText } from "@fantaskticedtechlimited/fantasktic-comp-library"
 import { FontTypes } from "@fantaskticedtechlimited/fantasktic-comp-library/lib/esm/types"
-import { FPrimaryButton } from "@fantaskticedtechlimited/fui-complib"
+import { FSecondaryButton } from "@fantaskticedtechlimited/fui-complib"
 import WithLoadingPageWrapper, {
 	LoadingPageWrapperContext,
 } from "../../layout/WithLoadingPageWrapper2"
@@ -158,14 +158,14 @@ function MyProjectPage() {
 	}, [artistMemberInstance, artProjectInstance])
 	return (
 		<div className={styles.ContentContainer}>
-			<FStyledText font={FontTypes.H4}>Project list</FStyledText>
+			<FStyledText font={FontTypes.H4}>MY NFT</FStyledText>
 
 			<div className={styles.toolbarContainer}>
 
 				{/* refresh button */}
-				<FPrimaryButton onClick={async () => await GetMyNFTList()}>
+				<FSecondaryButton onClick={async () => await GetMyNFTList()}>
 					Refresh
-				</FPrimaryButton>
+				</FSecondaryButton>
 			</div>
 
 			<div className={styles.topicListDiv}>
